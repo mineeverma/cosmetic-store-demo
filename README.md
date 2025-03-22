@@ -1,54 +1,93 @@
-# React + TypeScript + Vite
+# 🛍️ cosmetic-store-demo Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based cosmetic-store-demo project with Redux for state management, TypeScript for type safety, and SCSS for styling. The app fetches product data from a public API and allows users to search, view, and navigate through products.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🔍 Search for products
+- 🛒 View product details in a modal
+- 🎨 Responsive design with SCSS
+- 🏗️ Optimized with Redux, Redux-Thunk, and TypeScript
+- ✅ ESLint configured for code consistency
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ **Tech Stack**
+- **Frontend**: React, TypeScript, Redux, Redux-Thunk, SCSS
+- **Backend**: Public API (`https://dummyjson.com/products`)
+- **Routing**: React Router
+- **State Management**: Redux Toolkit
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 **Project Structure**
+```
+cosmetic-store-demo/
+│── public/                 # Static files
+│── src/
+│   ├── components/         # UI Components (Modal, Header, Footer, etc.)
+│   ├── pages/              # Page components (Home, Products, ProductDetails)
+│   ├── redux/              # Redux store, slices
+│   ├── styles/             # SCSS styles
+│   ├── App.tsx             # Main App Component
+│   ├── main.tsx            # React Entry Point
+│── .eslintrc.js            # ESLint Configuration
+│── package.json            # Project Dependencies
+│── README.md               # Project Documentation
+│── tsconfig.json           # TypeScript Configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔧 **Installation & Setup**
+Follow these steps to set up and run the project locally.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 1️⃣ **Clone the Repository**
+```sh
+git clone https://github.com/your-username/cosmetic-store-demo.git
+cd cosmetic-store-demo
 ```
+
+### 2️⃣ **Install Dependencies**
+```sh
+npm install
+```
+
+### 3️⃣ **Run the Project**
+```sh
+npm run dev
+```
+Now, open **`http://localhost:5173/`** in your browser.
+
+---
+
+## 🧪 **Testing**
+To run tests (if added):
+```sh
+npm test
+```
+
+---
+
+## 📜 **Environment Variables**
+If needed, create a `.env` file in the root directory and add:
+```
+REACT_APP_API_URL=https://dummyjson.com/products
+```
+
+---
+
+## 🏗️ **Building for Production**
+To build the project for production:
+```sh
+npm run build
+```
+
+---
+
+## 🤝 **Contributing**
+Pull requests are welcome! Please follow the ESLint & TypeScript guidelines.
+
+---
+
+## 📜 **License**
+This project is licensed under the MIT License.
