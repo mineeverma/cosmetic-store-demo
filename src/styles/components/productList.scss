@@ -1,0 +1,22 @@
+
+.product-list-container {
+  padding: 20px;
+}
+
+.search-input {
+  width: 86%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
