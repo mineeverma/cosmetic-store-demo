@@ -87,7 +87,4 @@ npm run build
 ## 🤝 **Contributing**
 Pull requests are welcome! Please follow the ESLint & TypeScript guidelines.
 
----
 
-## 📜 **License**
-This project is licensed under the MIT License.
